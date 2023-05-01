@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "15e2ef0e-bbf1-43b0-a1d4-0bf04ee64363",
+		"name": "LittleTasksWebAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25442102"
+	},
+	"item": [
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "profileGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7015/profiles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profileGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7015/profiles/26f40b89-7fd7-4295-8011-9bebe89a2ca1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"profiles",
+								"26f40b89-7fd7-4295-8011-9bebe89a2ca1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profilePost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Responsável\",\r\n    \"Description\": \"Perfil Responsável\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7015/profiles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profilePut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Dependente\",\r\n    \"Description\": \"Perfil Dependente\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7015/profiles/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"profiles",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profileDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7015/profiles/26f40b89-7fd7-4295-8011-9bebe89a2ca1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"profiles",
+								"26f40b89-7fd7-4295-8011-9bebe89a2ca1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "userPut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Pai do João e da Maria\",\r\n    \"Identification\": \"00000000191\",\r\n    \"ProfileId\": \"08b57756-184b-4f3d-862d-7173343f2ff3\",\r\n    \"Email\": \"paidojoaoemaria@gmail.com\",\r\n    \"Password\": \"senhapaidojoaoemaria\",\r\n    \"DateOfBirth\": \"2001-09-08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7015/users/ff410777-8d0d-4daf-917c-601dfe0535de",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"users",
+								"ff410777-8d0d-4daf-917c-601dfe0535de"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7015/users/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7015/users/69b21f01-7536-417e-a9a4-1d2f9d151a6c",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"users",
+								"69b21f01-7536-417e-a9a4-1d2f9d151a6c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7015/users/ff410777-8d0d-4daf-917c-601dfe0535de",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"users",
+								"ff410777-8d0d-4daf-917c-601dfe0535de"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Pai do João\",\r\n    \"Identification\": \"00000000191\",\r\n    \"ProfileId\": \"08b57756-184b-4f3d-862d-7173343f2ff3\",\r\n    \"Email\": \"paidojoao@gmail.com\",\r\n    \"Password\": \"senhapaidojoao\",\r\n    \"DateOfBirth\": \"2001-09-08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7015/users/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7015",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Status",
+			"item": [
+				{
+					"name": "StatusPost",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "StatusDelete",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "StatusGetAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "TasksPost",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ResponsableDependent",
+			"item": []
+		}
+	]
+}
