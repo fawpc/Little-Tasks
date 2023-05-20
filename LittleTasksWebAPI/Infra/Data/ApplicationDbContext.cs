@@ -1,4 +1,5 @@
-﻿using LittleTasksWebAPI.Domain.Profiles;
+﻿using Flunt.Notifications;
+using LittleTasksWebAPI.Domain.Profiles;
 using LittleTasksWebAPI.Domain.Tasks;
 using LittleTasksWebAPI.Domain.Users;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,7 @@ namespace LittleTasksWebAPI.Infra.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<Notification>();
             // Profile configs
             modelBuilder.Entity<Profile>()
                 .Property(p => p.Name)
